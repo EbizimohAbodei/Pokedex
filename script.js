@@ -13,15 +13,15 @@ API.then((res) => res.json()).then((data) => {
 
 const displayPokemon = (pokemons) => {
   pokemons.forEach((pokemon) => {
-    const types = [];
-    pokemon.types.forEach((type) => types.push(type.type.name));
-    let typesString = types.join(" ");
+    const individualPoke = [];
+    pokemon.types.forEach((type) => individualPoke.push(type.type.name));
+    let typeStrings = individualPoke.join(" ");
     pokedex.insertAdjacentHTML(
       "beforeend",
       `<div class="card">
        <img src="${pokemon.sprites.other.dream_world.front_default}" alt="${pokemon.name}" class="card-img"/>
          <p class="poke__name">${pokemon.name}</p>
-         <p class="poke__types">${typesString}</p>
+         <p class="poke__types">${typeStrings}</p>
      </div>`
     );
   });
