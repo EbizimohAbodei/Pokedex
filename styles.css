@@ -19,14 +19,34 @@ body {
   height: 100vh;
   width: auto;
   font-family: "Zen Old Mincho", serif;
-  margin: 1px;
+  margin: 5px;
 }
 
 .page__header {
   text-align: center;
-  margin: 5rem;
+  margin: 5rem 0rem 1.5rem;
   font-size: 4rem;
   color: rgb(24, 185, 185);
+}
+
+.input__form {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  margin-bottom: 4rem;
+}
+
+::placeholder {
+  color: rgb(24, 185, 185);
+  font-size: 1rem;
+  font-family: "Zen Old Mincho", serif;
+  text-align: center;
+}
+
+input {
+  height: 2rem;
+  width: 30rem;
+  border-radius: 0.5rem;
 }
 
 .cards__container {
@@ -37,6 +57,7 @@ body {
   height: auto;
   width: 100%;
   min-height: 2rem;
+  cursor: pointer;
 }
 
 .card img {
@@ -80,6 +101,7 @@ body {
   text-align: center;
   border-radius: 0rem 0rem 0.25rem 0.25rem;
   filter: saturate(0) hue-rotate(90deg) sepia(60%);
+  text-transform: capitalize;
 }
 
 .poke__types {
