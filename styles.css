@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Laila&family=Literata&family=Montaga&family=Philosopher&family=Zen+Old+Mincho&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(28, 119, 172);
+  --font: "Zen Old Mincho", serif;
+}
+
+body {
+  background-image: url(/Images/lucas-calloch-P-yzuyWFEIk-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: auto;
+  font-family: "Zen Old Mincho", serif;
+  margin: 1px;
+}
+
+.page__header {
+  text-align: center;
+  margin: 5rem;
+  font-size: 4rem;
+  color: rgb(24, 185, 185);
+}
+
+.cards__container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
+  margin: auto;
+  height: auto;
+  width: 100%;
+  min-height: 2rem;
+}
+
+.card img {
+  background-color: rgb(241, 231, 231);
+  filter: saturate(0) hue-rotate(90deg) sepia(60%);
+  width: 100%;
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+  object-fit: cover;
+  height: 250px;
+  /* object-fit: top; */
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgb(8, 1, 1);
+}
+
+.card:hover img {
+  filter: saturate(1);
+}
+
+.card:hover .poke__name {
+  filter: saturate(1);
+}
+
+.card:hover .poke__types {
+  filter: saturate(1);
+}
+
+.card {
+  /* background-color: rgba(255, 255, 255, 0.521); */
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.poke__name,
+.poke__types {
+  padding: 0.7rem;
+  margin-top: -4px;
+  background-color: darkgoldenrod;
+  text-align: center;
+  border-radius: 0rem 0rem 0.25rem 0.25rem;
+  filter: saturate(0) hue-rotate(90deg) sepia(60%);
+}
+
+.poke__types {
+  border-top-style: solid;
+}
